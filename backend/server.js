@@ -5,7 +5,7 @@ console.log("I am running!");
 const mongoose = require('mongoose');
 const express = require('express');
 
-const UserModel = require('./src/models/UserModel');
+//const UserModel = require('./src/models/UserModel');
 
 
 
