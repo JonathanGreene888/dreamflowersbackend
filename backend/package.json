@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/server"
+    "server": "nodemon server.js"
   },
   "keywords": [],
   "author": "Jonathan Greene",
@@ -18,8 +18,5 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.6"
-  },
-  "engines": {
-    "node": "8.11.2"
   }
 }
