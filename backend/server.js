@@ -36,6 +36,10 @@ server.use(express.json());
 //test routing
 server.get('/', (req, res) => res.send("The server is up and running!"));
 
+server.use('/auth', authRouter);
+server.use('/api', contentRouter);
+server.use('/payment', paymentRouter);
+
 
 //initializing the server
 server.listen(port, (req, res) => console.log('The server is listening on port: ' + port));
