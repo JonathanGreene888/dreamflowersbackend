@@ -13,6 +13,10 @@ const StoreSchema = new Schema ({
     },
     price: {
         type: number,
+    },
+    itemId: {
+        type: String, 
+        required: false
     }
 });
 
