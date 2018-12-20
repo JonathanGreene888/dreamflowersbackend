@@ -7,6 +7,10 @@ const express = require('express');
 
 //const UserModel = require('./src/models/UserModel');
 
+// importing routers
+const authRouter = require('./src/routers/authRouter');
+const contentRouter = require('./src/routers/contentRouter');
+const paymentRouter = require('./src/routers/paymentRouter');
 
 
 
