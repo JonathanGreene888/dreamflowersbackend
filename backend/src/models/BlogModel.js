@@ -1,6 +1,7 @@
 // this is the blog model
 
 mongoose = require('mongoose');
+ObjectId = mongoose.Schema.Types.ObjectId;
 Schema = mongoose.Schema;
 
 
@@ -12,6 +13,15 @@ const BlogSchema = new Schema({
     content: {
         type: String,
         require: true 
+    },
+    user: {
+        type: OBjectId,
+        ref: 'UserModel',
+        required: true
+    },
+    date: {
+        type: Date,
+        default: Date.now()
     }
 });
 
